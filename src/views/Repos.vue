@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 import githubInfo from './githubInfo'
 const datas = ref([])
 const user = 'daniello123567';
-const token = githubInfo.token
+const token = process.env.API_URL
 const isError = ref(false)
 const Loaded = ref(false)
 onMounted(() => {
