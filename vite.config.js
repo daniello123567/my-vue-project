@@ -12,6 +12,11 @@ export default defineConfig({
     vueJsx(),
     VueDevTools(),
   ],
+   build: {
+    rollupOptions: {
+      external: ['vue-error-boundary'],
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
