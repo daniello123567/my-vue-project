@@ -6,7 +6,7 @@ console.log(githubInfo)
 const route = useRoute()
 const id = route.params.id
 const user = 'daniello123567';
-const token = githubInfo.token;
+const token = process.env.API_URL;
 const data = ref([]);
 import { RouterLink } from 'vue-router';
 const Loaded = ref(false);
