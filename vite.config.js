@@ -17,9 +17,11 @@ export default defineConfig({
       external: ['vue-error-boundary'],
     },
   },
-  resolve: {
+   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+          '@assets': './src/assets',
+
     }
   }
 })
